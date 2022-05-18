@@ -1,0 +1,423 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1, h2, h3, a {
+    font-weight: 100;
+    color: black;
+    text-transform: uppercase;
+}
+h2 {
+    color: black;
+}
+h3 {
+    font-size: 30px;
+    padding-top: 4%;
+    margin-bottom: 5px;
+}
+h4, p {
+    color: black;
+}
+
+/* Header Style */
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    left: 0;
+    background-color: rgb(124, 124, 238);
+    /* background-color: transparent; */
+    z-index: 1;
+}
+
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header .menu-container {
+    position: absolute;
+    float: right;
+    height: 100%;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header .menu-container ul li {
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+    margin: 10px 50px 0 0;
+}
+header .menu-container ul li a {
+    color: white;
+    text-decoration: none;
+}   
+header .menu-container ul li a:hover {
+    color: pink;
+} 
+
+/* Section Style */
+main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(137, 165, 156);
+    /* margin-bottom: 30px; */
+}
+.mySection {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+main .mySection:nth-child(1) {
+    /* height: calc(100% - 70px); */
+    /* background-color: red; */
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Home */
+.container-hnt {
+    position: relative;
+    height: auto;
+    width: 30%;
+    margin: auto;
+    padding: 0;
+    background-color: rgb(173, 195, 212);
+    border-radius: 5px;
+}
+.container-hnt .container-input {
+    padding: 15px;
+    margin: 10px;
+    height: auto;
+    width: auto;
+    text-align: left;
+}
+.container-hnt .container-input .custom-select{
+    display: flex;
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    outline: none;
+}
+.container-hnt .container-input input[type="date"],
+.container-hnt .container-input input[type="number"],
+.container-hnt .container-input input[type="text"] {
+    display: flex;
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+/* News */
+.container-news {
+    height: 80%;
+    width: 80%;
+    /* background-color: red; */
+    margin: auto;
+    padding: 0;
+    overflow: hidden;   
+}
+.container-news .news-field {
+    display: inline-block; 
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+    width: calc(100% - 70%);
+    background-color: salmon;   
+    top: 50%;
+    left: 50%;
+    transform: translateX(0%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px #888888;
+    outline: none;
+}
+.container-news .news-field h5 {
+    padding: 5px;
+}
+.container-news .news-field .imagegur {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 275px;
+    background-color: purple;
+    border-radius: 10px 10px 0 0;
+}
+.container-news .news-field .cus-button {
+    position: relative;
+    display: block;
+    width: 80px;
+    background-color: sandybrown;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+}
+.container-news .news-field .cus-button:hover {
+    background-color: seagreen;
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(124, 124, 238);
+}
+
+/* rulers */
+.rules {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+.rules .container-rules {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+    border: 1px solid black;
+}
+
+/* Find-Tiket */
+.find-tiket {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+.find-tiket .container-find-tiket {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+.find-tiket .container-find-tiket input[type="text"],
+.find-tiket .container-find-tiket input[type="date"],
+.find-tiket .container-find-tiket input[type="number"] {
+    width: 25%;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 2px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+.find-tiket .container-find-tiket .submitBtn {
+    width: 15%;
+    padding: 10px;
+}
+
+/* Detail-Tiket */
+.detail-tiket {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: auto;
+}
+.detail-tiket .container-detail-tiket {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+.detail-tiket .container-detail-tiket table {
+    border: 1px solid gray;
+    position: relative;
+    width: 100%;
+}
+th, td {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+/* Form Data Diri */
+
+/* Data Diri */
+.container-data-diri {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container-data-diri .data-diri .title-data {
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.container-data-diri .data-diri {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+.container-data-diri .data-diri .body-data {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.container-data-diri .data_penumpang_btn {
+    display: block;
+    float: right;
+    margin: 0 20px;
+    width: auto;
+    height: 35px;
+}
+
+/* Data Penumpang */
+.container-data-penumpang {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+.container-data-penumpang .data-penumpang .title-data {
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.container-data-penumpang .data-penumpang {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    text-align: left;
+}
+.container-data-penumpang .data-penumpang .body-data {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.input-grip {
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+
+/* input type style */
+.input-grip input[type="text"], 
+.input-grip input[type="email"], 
+.input-grip input[type="date"] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 10px;
+}
+input [type="text"] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.metode-bayar {
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0;
+
+}
+.metode-bayar .container-metode-bayar {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    
+}
+.metode-bayar .container-metode-bayar p {
+    position: relative;
+    width: auto;
+    height: auto;
+    left: 70px;
+}
+.metode-bayar .container-metode-bayar .body-data {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+.container-metode-bayar .body-data .input-grip {
+    text-align: left;
+
+}
+
+.choise-tiket {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.choise-tiket:hover {
+    background-color: rgb(167, 125, 48);
+}
+
+.tampil {
+    display: none;
+}
+.show {
+    display: block;
+}
+.kecil {
+    width: 100px;
+}
+.file_btn {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.validasi_btn {
+    margin-top: 10px;
+}
+
+.chair-choise {
+    position: absolute;
+    width: 100%;
+    height: auto;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    display: none;
+    z-index: 99;
+}
+

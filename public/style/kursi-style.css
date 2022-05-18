@@ -1,0 +1,59 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aqua;
+}
+
+.main-container-kursi {
+    position: relative;
+    width: 50%;
+    height: 80%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    border: 1px solid black;
+}
+.main-container-kursi .container-kursi #kursi{
+    width: 100%;
+}
+td, th {
+    padding: 3px;
+    border: none;
+}
+
+.main-container-kursi .pilih-kursi {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main-container-kursi .pilih-kursi #kursiPilih {
+    width: 10%;
+}
+
+.btnPilih {
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+}
+.btnPilih:hover {
+
+    background-color: grey;
+}
+.btnPilihMati {
+    background-color: red;
+    pointer-events: none;
+    width: 50%;
+    height: 50%;
+    border-radius: 10%;
+    padding: 5px;
+    box-sizing: border-box;
+    outline: none;
+}

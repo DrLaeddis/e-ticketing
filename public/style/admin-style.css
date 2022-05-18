@@ -1,0 +1,146 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: blueviolet;
+}
+
+/* Admin Style */
+.container-main-page {
+    background-color: burlywood;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* left side */
+.container-main-page.left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(207, 182, 182);
+    z-index: 2;
+}
+.container-main-page .custome-header {
+    position: relative;
+    cursor: pointer;
+    height: auto;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%);
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #3d0303;
+}
+.container-main-page .custome-header:hover {
+    color: rgb(238, 13, 13);
+}
+.container-main-page ul  {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+.container-main-page ul li a {
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+/* right side */
+.container-main-page.right {
+    position: relative;
+    width: calc(100% - 250px);
+    height: 100%;
+    background-color: rgb(150, 82, 82);
+    float: right;
+    box-sizing: border-box;
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.main-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.main-section.active {
+    transform: translateX(0);
+    box-sizing: border-box;
+    opacity: 1;
+    z-index: 10;
+    height: 100%;
+}
+
+.main-section:nth-child(1) {
+    background-color: rgb(240, 239, 239);
+    overflow-y: scroll;
+}
+.main-section:nth-child(2) {
+    background-color: rgb(240, 239, 239);
+}
+.main-section:nth-child(3) {
+    background-color: rgb(240, 239, 239);
+}
+.main-section:nth-child(4) {
+    background-color: rgb(240, 239, 239);
+}
+
+
+/* Section 1 */
+.add-rute {
+    position: relative;
+    height: 100%;
+    width: auto;
+    background-color: pink;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.add-rute:hover {
+    color: rgb(216, 89, 89);
+}
+
+table {
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+/* add-new-rute */
+.add-new-rute {
+    position: relative;
+    display: block;
+    height: auto;
+    width: 100%;
+    margin-top: 12px;
+}
+.add-new-rute .rute_label {
+    font-size: 20px;
+}
+.add-new-rute .rute_input_space {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+.rute_submit_btn {
+    float: right;
+    height: 50px;
+    width: 100px;
+}
